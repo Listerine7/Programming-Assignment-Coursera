@@ -16,7 +16,9 @@ makeCacheMatrix <- function(x = matrix()) {
 }
 
 ## "cacheSolve" takes a list produced by the "makeCacheMatrix" function and 
-## inverts the initial matrix "makeCacheMatrix" used as input. The output is a matrix again. 
+## inverts the initial matrix "makeCacheMatrix" used as input. 
+## The output is a matrix again. If the inv variable already has a value it
+## takes it instead of recalculating the inverse
 ## This function cannot use a matrix as input directly
 
   cacheSolve <- function(x, ...) {
